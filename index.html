@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Outside</title>
+	<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+	<link href='https://fonts.googleapis.com/css?family=Gilda+Display|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="assets/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>		
+	<header>
+		<nav>
+			<div class="arrow-down"></div>
+		</nav>	
+		<div class="headerBox">
+			<h1>Get Outside</h1>
+			<p>Find an adventure in your own backyard.</p>
+		</div>	
+	</header>
+	<div class="arrow-up"></div>
+	
+	<section class="post">
+		<aside>
+			<img src="assets/hero.jpeg" alt="Image">
+		</aside>
+		<article>
+			<p> Someone once said that the world is too big to stay in one place. There are so many incredible places to go and things to do, that sometimes it's hard to decide - that's where this app comes in! Just select the activity you'd like to do, and then the place you'd like to do it in and let it suggest a small list of options, then,<strong> go have an adventure!</strong></p>
+		</article>
+	</section>
+	
+	<section class="photos">
+		<div class="arrow-down2"></div>
+		<p>How Would You Like To Enjoy The Great Outdoors?</p>
+		<ul>
+			<li>
+				<input type="radio" id="hiking" name="activities" value="hiking" required>
+				<label class="hiking short"for="hiking">Hiking</label>
+				<div class="box"></div>
+			</li>
+			<li>
+				<input type="radio" id="biking" name="activities" value="biking" required>
+				<label class="biking long" for="biking">Mountain Biking</label>
+				<div class="box box2"></div>
+			</li>
+			<li>
+				<input type="radio" id="camping" name="activities" value="camping" required>
+				<label class="camping short2" for="camping">Camping</label>
+				<div class="box"></div>
+			</li>
+			<li>
+				<input type="radio" id="skiing" name="activities" value="skiing" required>
+				<label class="skiing long2" for="skiing">Skiing & Snowboarding</label>
+				<div class="box box3"></div>
+			</li>
+		</ul>
+		<div class="popUp hide">
+			<p>Where Would You Like To Explore?</p>
+			<form class="search_form">
+  				<select name="" id="choose"></select>
+			</form>
+		</div>
+		<div class="arrow-up2"></div>
+	</section>
+
+	<div id= "results" class="results2 hide">
+		<h3 class="">You Should Check Out:</h3>
+	</div>
+
+	<section class="mapBox">
+		<p>MAPBOX HERE</p>
+		<div id='map'></div>
+	</section>
+
+	<footer>
+		<a href="http://samanthacross.ca"><p>Created by Samantha Cross 2015</p></a>
+		<div class="content">
+			<a href="https://github.com/sammcross"><i class="fa fa-github"></i></a>
+			<a href="https://twitter.com/_samanthacross"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.linkedin.com/pub/samantha-cross/32/846/532"><i class="fa fa-linkedin"></i></a>
+			<a href="https://medium.com/@sammcross"><i class="fa fa-medium"></i></a>
+		</div>
+	</footer>
+
+	<script src="js/underscore.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
+
+<!-- 
+Hero Photo: Anne Kaercher. 
+
+Mountain biking photo: https://www.flickr.com/photos/andycpics/
+
+Camping photo: https://www.flickr.com/photos/stillwellmike/
+
+Skiing photo: https://unsplash.com/aleskrivec
+
+Hiking photo: https://unsplash.com/andrewcollins
+
+Layout design inspiration from: http://amazingwebdesignideas.blogspot.com/2013/09/web-design-inspiration_13.html
+ -->
